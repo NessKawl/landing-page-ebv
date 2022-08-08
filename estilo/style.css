@@ -26,7 +26,8 @@ body {
 }
 
 header {
-    background-color: rgba(24, 90, 212, 0.905);
+    /*background-color: rgba(24, 90, 212, 0.905);*/
+    background-image: linear-gradient(to bottom, rgba(24, 90, 212, 0.905), rgba(20, 82, 198, 0.905), rgba(18, 60, 139, 0.867));
 }
 
 header > h1 {
@@ -35,6 +36,38 @@ header > h1 {
     padding: 10px;
 }
 
+header > i {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+main {
+    font-size: 1.3em;
+}
+
+#contato {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 h2, p {
     text-align: center;
+    padding: 5px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+ }
+
+
+p:hover {
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    cursor: pointer;
 }
