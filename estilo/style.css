@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Questrial';
+    src: url('../fonts/Questrial-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('../fonts/GreatVibes-Regular.ttf') format('truetype');
+}
+
+:root {
+    --fonte-padrao: 'Questrial';
+    --fonte1: 'Great Vibes';
+}
+
+* {
+    font-family: var(--fonte-padrao);
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgba(180, 180, 180, 0.714);
+}
+
+header {
+    background-color: rgba(24, 90, 212, 0.905);
+}
+
+header > h1 {
+    font-family: var(--fonte1);
+    text-align: center;
+    padding: 10px;
+}
+
+h2, p {
+    text-align: center;
+}
