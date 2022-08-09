@@ -30,10 +30,11 @@ header {
     background-image: linear-gradient(to bottom, rgba(24, 90, 212, 0.905), rgba(20, 82, 198, 0.905), rgba(18, 60, 139, 0.867));
 }
 
-header > h1 {
+h1 {
     font-family: var(--fonte1);
     text-align: center;
     padding: 10px;
+    font-size: 2.8em;
 }
 
 header > i {
@@ -43,8 +44,44 @@ header > i {
     cursor: pointer;
 }
 
+nav {
+    background-color: rgba(18, 60, 139, 0.867);
+    text-align: center;
+    padding: 10px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.574);
+}
+
+nav > a {
+    margin-right: 10px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
 main {
     font-size: 1.3em;
+}
+
+#tel-float {
+    text-align: center;
+    animation: float 1s ease-in-out infinite;
+    transform: translateY(0px);
+    font-size: 2.5em;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 #contato {
@@ -71,3 +108,21 @@ p:hover {
     border-radius: 3px;
     cursor: pointer;
 }
+
+
+/*=========== LOCALIZAÇÃO ============*/
+
+#mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px;
+}
+
+#mapa > iframe {
+    width: 85vw;
+    height: 78vh;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.53);
+}
+
