@@ -25,6 +25,7 @@ body {
     background-color: rgba(180, 180, 180, 0.714);
     background-image: url('../img/vista-ebv.jpeg');
     background-attachment: fixed;
+    background-size: cover;
 }
 
 header {
